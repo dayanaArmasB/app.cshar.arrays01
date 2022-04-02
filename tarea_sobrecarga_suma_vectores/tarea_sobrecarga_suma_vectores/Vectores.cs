@@ -22,13 +22,6 @@ namespace tarea_sobrecarga_suma_vectores
             }
         }
         
-  /*public void Imprimir()
-        {
-            for (int f = 0; f < vec.Length; f++)
-            {
-                vec[f] = vec[f];
-            }
-        }*/
         public static Vectores operator +(Vectores v1, Vectores v2)
         {
             Vectores su = new Vectores();
