@@ -7,16 +7,16 @@ using System.Threading.Tasks;
 namespace tarea_sobrecarga_suma_vectores
 {
 
-    //comentario
-    class Vectores
+    public class Util
     {
-        private int[] vec;
-       
-        public Vectores()
+        public int[] vec; //vector 
+
+        public Util()
         {
-           int[] vec = new int[5];
+            vec = new int[5];
         }
-    public void Cargar()
+ 
+        public void Cargar()
         {
             for (int f = 0; f < vec.Length; f++)
             {
@@ -24,9 +24,9 @@ namespace tarea_sobrecarga_suma_vectores
             }
         }
         
-        public static Vectores operator +(Vectores v1, Vectores v2)
+        public static Util operator +(Util v1, Util v2)
         {
-            Vectores su = new Vectores();
+            Util su = new Util();
             for (int f = 0; f < su.vec.Length; f++)
             {
                 su.vec[f] = v1.vec[f] + v2.vec[f];
